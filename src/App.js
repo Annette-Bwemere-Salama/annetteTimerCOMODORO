@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./App.css";
+import BreakLength from "BreakLength";
 /*
 import  Header from "./COMPONENT/Header.js";
 import Main from "./COMPONENT/Clock.js";
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="diveDensemble">
       <Clock />
-
+      <BreakLength />
     </div>
   );
 }
