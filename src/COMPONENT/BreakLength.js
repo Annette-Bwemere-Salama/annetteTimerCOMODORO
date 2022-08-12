@@ -3,20 +3,27 @@ import React from "react";
 function BreakLength() {
   return (
     <React.Fragment>
-      <div>
-        <h4>Break Length</h4>
-        <button>incrementation -</button>
-        <p>5</p>
-        <button>incrementation -</button>
+      <div id="break-label">
+        <p>BreakLength</p>
+      </div>
+      <div id="session-label">
+        <p>ession Length</p>S
       </div>
       <div>
-        <div>
-          <h4>Session Length</h4>
-          <button>incrementation -</button>
-          <p>5</p>
-          <button>incrementation -</button>
-        </div>
+        <button id="break-decrement">-(1)</button>
+        <button id="session-decrement">+(0)</button>
       </div>
+      <div>
+        <button id="break-increment">-(1)</button>
+        <button id="session-increment">+(0)</button>
+      </div>
+      <p id="break-length">5</p>
+      <p id="session-length">25</p>
+      <p id="timer-label">Session</p>
+
+      <p id="time-left">mm:ss</p>
+      <button id="start_stop">play||stop0</button>
+      <button id="reset">reinitialiser</button>
     </React.Fragment>
   );
 }
