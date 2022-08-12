@@ -2,9 +2,9 @@ import React from "react";
 
 function Clock() {
   return (
-    <div>
+    <React.Fragment>
       <p> 25 + 5 Clock</p>
-    </div>
+    </React.Fragment>
   );
 }
 export default Clock;
