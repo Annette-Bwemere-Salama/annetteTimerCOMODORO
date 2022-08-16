@@ -1,0 +1,43 @@
+body{
+    background: #0a2023;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.caustionss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+.nombreArrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+
+.sessiobord{
+    border: 7px solid #ffffff;
+    margin: 20px auto 10px auto;
+    width: 270px;
+    height: 160px;
+    border-radius: 40px;
+    position: relative;
+
+}
+ 

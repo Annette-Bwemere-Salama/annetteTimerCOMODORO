@@ -2,16 +2,15 @@ import React from "react";
 
 import "./App.css";
 import BreakLength from "./COMPONENT/BreakLength.js";
-
-// import Clock from "./COMPONENT/Clock.js";
-// import Session from "./COMPONENT/session.js";
-// import Footer from "./COMPONENT/footer.js";
+import Sessionbord from "./COMPONENT/session";
+import SessionLength from "./COMPONENT/SessionLength";
 
 function App() {
   return (
     <React.Fragment>
       <BreakLength />
-g */}
+      <SessionLength />
+      <Sessionbord />
     </React.Fragment>
   );
 }

@@ -1,29 +1,25 @@
 import React from "react";
+const nomDuProject = "25+5 Clock";
+
 
 function BreakLength() {
   return (
-    <React.Fragment>
-      <div id="break-label">
-        <p>BreakLength</p>
-      </div>
-      <div id="session-label">
-        <p>ession Length</p>S
-      </div>
-      <div>
-        <button id="break-decrement">-(1)</button>
-        <button id="session-decrement">+(0)</button>
-      </div>
-      <div>
-        <button id="break-increment">-(1)</button>
-        <button id="session-increment">+(0)</button>
-      </div>
-      <p id="break-length">5</p>
-      <p id="session-length">25</p>
-      <p id="timer-label">Session</p>
-
-      <p id="time-left">mm:ss</p>
-      <button id="start_stop">play||stop0</button>
-      <button id="reset">reinitialiser</button>
+    <React.Fragment className="container">
+      <h1>{nomDuProject}</h1>
+      <main>
+        <div id="break-label">
+          <p>BreakLength</p>
+          <div className="nombreArrow">
+            <span id="break-decrement" class="material-symbols-outlined">
+              arrow_downward
+            </span>
+            <p id="session-length">25</p>
+            <span id="break-increment" class="material-symbols-outlined">
+              arrow_upward
+            </span>
+          </div>
+        </div>
+      </main>
     </React.Fragment>
   );
 }
