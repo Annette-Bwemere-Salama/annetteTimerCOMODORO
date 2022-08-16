@@ -6,7 +6,6 @@ class Incrementation extends React.Component {
     this.state = { n: 5 };
   }
 
-
   render() {
     return (
       <div id="session-label">

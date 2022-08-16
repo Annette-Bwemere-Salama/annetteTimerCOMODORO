@@ -1,19 +1,48 @@
-import React from "react";
+import React, { useState } from "react"
 
-function Sessionbord() {
+let clockSession;
+function IncremeSession() {
+    let [second, setSecond] = useState(59)
+    let [minute, setMinute] = useState(25)
+    let [pause, setPause] = useState(true)
+    const clock = () => {
+        clockSession = setInterval(() => {
+            if (second >=0) {
+                setSecond(second--)
+            }
+            else{
+                setSecond(second + 59)
+                setMinute(minute - 1)
+            }
+        }, 1000)
+
+
+    }
+
     return (
         <React.Fragment>
             <div className="sessiobord">
                 <p id="timer-label">Session</p>
-                <p id="time-left">25:00</p>
+                <p id="time-left">
+                    {`${minute}:${second}`}
+                </p>
             </div>
-            <span id="start_stop" class="material-symbols-outlined">
+            <span id="start_stop" class="material-symbols-outlined" onClick={() => {
+                if (!pause) {
+                    setPause(true)
+                    clock()
+                } else {
+                    setPause(false)
+                    clearInterval(clockSession)
+                }
+            }}>
                 play_pause
             </span>
             <span id="reset" class="material-symbols-outlined">
                 restart_alt
             </span>
         </React.Fragment>
-    )
+    );
 }
-export default Sessionbord;
+
+export default IncremeSession;

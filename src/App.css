@@ -10,12 +10,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 main{
     display: flex; 
     align-items: center;
