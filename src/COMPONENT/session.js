@@ -11,14 +11,11 @@ function IncremeSession() {
                 setSecond(second--)
             }
             else{
-                setSecond(second + 59)
-                setMinute(minute - 1)
+                setSecond(second += 60)
+                setMinute(minute -= 1)
             }
         }, 1000)
-
-
     }
-
     return (
         <React.Fragment>
             <div className="sessiobord">
@@ -38,7 +35,13 @@ function IncremeSession() {
             }}>
                 play_pause
             </span>
-            <span id="reset" class="material-symbols-outlined">
+            <span id="reset" class="material-symbols-outlined" onClick={()=>{
+                setSecond(59)
+                setMinute(25)
+                setPause(true)
+                clearInterval(clockSession)
+
+            }}>
                 restart_alt
             </span>
         </React.Fragment>
